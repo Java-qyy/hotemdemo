@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" version="3.0">
+  <display-name>hoteldemo</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>shouye.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  
+  
+  <!-- 齐云尧 -->
+ 	<servlet>
+  <servlet-name>TongJiServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.tjmanage.TongJiServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>TongJiServlet</servlet-name>
+  <url-pattern>/manage/tjmanage.do</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>LKServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.lkcx.LKServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>LKServlet</servlet-name>
+  <url-pattern>/manage/lkcx.do</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+  <servlet-name>PDPosswordServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.denglu.PDPosswordServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>PDPosswordServlet</servlet-name>
+  <url-pattern>/manage/pdpossword.do</url-pattern>
+  </servlet-mapping>
+  
+ 
+  
+  <!-- 刘冠泽 -->
+  <servlet>
+  <servlet-name>kfglServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.kfgl.kfglServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>kfglServlet</servlet-name>
+  <url-pattern>/manage/kfgl.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  <!-- 刘昊原 -->
+  <servlet>
+  <servlet-name>CheckoutServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.checkout.CheckoutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>CheckoutServlet</servlet-name>
+  <url-pattern>/manage/checkout.do</url-pattern>
+  </servlet-mapping>
+  
+   <!-- 刘冠泽 -->
+  <servlet>
+  <servlet-name>lvkedengjiServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.lvkedengji.lvkedengjiServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>lvkedengjiServlet</servlet-name>
+  <url-pattern>/manage/lvkedengji.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 刘冠泽 -->
+  <servlet>
+  <servlet-name>billServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.bill.billServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>billServlet</servlet-name>
+  <url-pattern>/manage/bill.do</url-pattern>
+  </servlet-mapping>
+  
+   <!-- 刘冠泽 -->
+  <servlet>
+  <servlet-name>glyServlet</servlet-name>
+  <servlet-class>com.rj.bd.hotel.manage.gly.glyServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  <servlet-name>glyServlet</servlet-name>
+  <url-pattern>/manage/gly.do</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
